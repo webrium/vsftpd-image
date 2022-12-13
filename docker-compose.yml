@@ -1,0 +1,14 @@
+services:
+ ftp:
+  tty: true
+  build:
+   context: .
+   dockerfile: Dockerfile
+  image: nitrocc/vsftpd:latest
+  ports:
+   - 20:20
+   - 21:21
+   - 1024-1048:1024-1048
+  volumes:
+    - /home/data:/home
+    - ./config/ssl/private/vsftpd.pem:/etc/ssl/private/vsftpd.pem
