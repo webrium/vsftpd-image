@@ -10,5 +10,5 @@ services:
    - 21:21
    - 1024-1048:1024-1048
   volumes:
-    - /home/sites/academy.faramadrak.com/src/storage:/home/academy
+    - /home/data:/home/academy
     - ./config/ssl/private/vsftpd.pem:/etc/ssl/private/vsftpd.pem
