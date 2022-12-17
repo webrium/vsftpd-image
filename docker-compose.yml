@@ -10,5 +10,5 @@ services:
    - 21:21
    - 1024-1048:1024-1048
   volumes:
-    - /home/data:/home/academy
+    - /home/data:/home/site
     - ./config/ssl/private/vsftpd.pem:/etc/ssl/private/vsftpd.pem
