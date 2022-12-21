@@ -6,12 +6,13 @@ You can define your users in the Docker file as in the example below
 
 ### Ubuntu
 ```
-RUN useradd username  -d /home && echo 'username:password_strign' | chpasswd
+RUN useradd username -g www-data -d /home && echo 'username:password_strign' | chpasswd
 ```
 
 ### Alpine
 ```
 RUN adduser --home /home username;echo 'username:password_strign' | chpasswd
+RUN chmod -aG www-data username
 ```
 
 ## Private key
