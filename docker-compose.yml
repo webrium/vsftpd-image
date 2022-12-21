@@ -3,8 +3,7 @@ services:
   tty: true
   build:
    context: .
-   dockerfile: ubuntu.Dockerfile
-  image: nitrocc/vsftpd:ubuntu
+   dockerfile: Dockerfile
   ports:
    - 20:20
    - 21:21
