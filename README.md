@@ -11,8 +11,7 @@ RUN useradd username -g www-data -d /home && echo 'username:password_strign' | c
 
 ### Alpine
 ```
-RUN adduser --home /home username;echo 'username:password_strign' | chpasswd
-RUN chmod -aG www-data username
+RUN adduser username -G www-data -h /home;echo 'username:password_strign' | chpasswd
 ```
 
 ## Private key
