@@ -9,10 +9,6 @@ You can define your users in the Docker file as in the example below
 RUN useradd username -g www-data -d /home && echo 'username:password_strign' | chpasswd
 ```
 
-### Alpine
-```
-RUN adduser username -G www-data -h /home;echo 'username:password_strign' | chpasswd
-```
 
 ## Private key
 Run the following code once to generate the private key. It is used for tls connection
