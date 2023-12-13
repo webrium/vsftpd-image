@@ -42,5 +42,5 @@ RUN adduser --home /home username;echo 'username:password_strign' | chpasswd
 
 And end 
 ```
-ducker compose up -d
+docker compose up -d
 ```
